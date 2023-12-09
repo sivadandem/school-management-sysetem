@@ -1,0 +1,368 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styles */
+body {
+  background-color: white;
+}
+
+/* Header styles */
+.header {
+  background-color: skyblue;
+  line-height: 80px;
+  padding-left: 30px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Link styles */
+a {
+  text-decoration: none!important;
+  color: lightgreen;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+  background-color: lightgreen;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Logout button styles */
+.logout {
+  float: right;
+  padding-right: 30px;
+  margin-right:20px;
+}
+
+
+tr a:hover{
+  padding:0px;
+}
+
+
+ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Content area styles */
+.content {
+  margin: 7% 20%; /* Adjusted for small screens */
+}
+
+/* Table styles */
+table th {
+  background-color: black;
+  color: lightgreen;
+  border: 1px;
+  border-radius: 5px;
+}
+
+table tr {
+  background-color: lightgreen;
+}
+
+/* Primary button styles */
+.btn-primary {
+  color: lightgreen;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid lightgreen;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Additional styles */
+.adminhome {
+  margin-left: 5%; /* Adjusted for small screens */
+}
+
+.div_design {
+  margin-top: 20px; /* Adjusted for small screens */
+}
+
+/* Label styles */
+label {
+  display: block;
+  color: lightgreen;
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 50%; /* Adjusted for small screens */
+}
+
+/* Input styles */
+input {
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgreen;
+  width: 50%; /* Adjusted for small screens */
+}
+
+/* Specific element styles */
+#l1, #l2, #l3, #l4{
+  margin-top: 20px;
+}
+
+#addstudentbtn{
+  margin-top:20px;
+  padding:10px;
+  width:fit-content;
+}
+
+/* Style the default scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: lightgreen;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+
+
+/* Section4 styles */
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjusted for small screens */
+  overflow-x: hidden;
+  margin: 40px 20px; /* Adjusted for small screens */
+}
+
+.persons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center items vertically within each row */
+}
+
+.column {
+  padding: 15px;
+}
+
+.column img {
+  width: 100%; /* Adjusted for small screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20%;
+}
+
+.column p {
+  margin-top: 10px;
+}
+
+.about1img img {
+  border-radius: 25px;
+  width: 100%; /* Adjusted for small screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about1text p {
+  font-size: larger;
+}
+
+#about1textp {
+  font-weight: bolder;
+}
+
+/* Image glow effect */
+.column img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.column:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px lightgreen;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  /* Sidebar styles for small screens */
+  ul {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-top-right-radius: 0;
+  }
+
+  /* Content area styles for small screens */
+  .content {
+      margin: 5% 5%;
+  }
+
+  /* Additional styles for small screens */
+  .adminhome {
+      margin-left: 5%;
+  }
+
+  .div_design {
+      margin-top: 10px;
+  }
+
+  /* Section4 styles for small screens */
+  .section4 {
+      margin: 40px 10px;
+  }
+}
+
+
+/* Sidebar styles */
+ul {
+  background-color: rgb(55, 78, 55);
+  width: 200px; /* Adjust the width as needed */
+  height: 90vh;
+  margin-top:5%;
+  position: fixed; /* Change from relative to fixed */
+  left: 0; /* Add left property to position it on the left */
+  top: 0;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+li{
+  margin-top:40px;
+}
+
+.column {
+  padding: 15px;
+  margin-left:80px;
+  margin-right:20px;
+  height: 300px; /* Set a specific height for the container */
+}
+
+.column img {
+  width: 5%;
+  height: 50%; /* Maintain aspect ratio */
+  object-fit: cover; /* This property ensures the image covers the container */
+  border-radius: 20%;
+  margin-left:40px;
+}
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  /* Sidebar styles for small screens */
+  ul {
+      width: 100%;
+      margin-top:5%;
+      
+      height: auto;
+      position: relative;
+      border-top-right-radius: 0;
+  }
+  li{
+    margin-top:40px;
+  }
+
+  /* Other styles for small screens */
+  /* ... */
+}
+
+
+
+#profile-image{
+  height: 25%;
+  width:40%;
+  margin-top:20px;
+  border-radius:50px;
+}
+
+
+.databox{
+  display: flex;
+  align-items: centers;
+  justify-content: space-between;
+  margin-top:40px;
+}
+
+.data{
+  padding:40px;
+  margin:20px;
+  background-color: black;
+  color:lightgreen;
+  width:max-content;
+  border-radius: 50px;
+  
+}
+
+.data:hover{
+
+  transform: scale(1.1);
+  box-shadow: 0 0 40px lightgreen;
+
+}
+
+
+.dt{
+  margin-bottom:20px;
+}
+
+#datetime{
+  font-size: medium;
+  margin-left:50%;
+}
+
+.datatable{
+  margin-top :80px;
+}
+
+
+.data a:hover{
+  color:red;
+
+}
+
+
+@keyframes flash {
+  0%, 40% {
+      color:black;
+  }
+  40%, 70% {
+      color:green;
+  }
+  70%, 100% {
+      color: red;
+  }
+}
+
+
+
+
+#sp1{
+  animation: flash 3s infinite;
+  
+}

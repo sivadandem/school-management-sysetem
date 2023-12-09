@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  max-width:auto;
+  word-wrap: break-word;
+  
+}
+
+
+body{
+  background-color: black;
+}
+
+.about1text p,.section4,.section6{
+  color:white;
+}
+h2{
+  margin-bottom:10px;
+}
+
+
+
+nav {
+  position: fixed;
+  background: black;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 12;
+  border-radius:2px;
+
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+}
+.menu .logo a {
+  text-decoration: none;
+  color: skyblue;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
+
+  
+}
+.menu ul {
+  display: inline-flex;
+  
+
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+  
+
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: skyblue;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  border-radius:15px;
+  text-shadow: 1px 1px 1px black;
+  
+}
+.menu ul li a:hover {
+  background: lightgreen;
+  color: black;
+}
+
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+
+}
+.center .title {
+  color:skyblue;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.section1,.section4{
+  height:100vh;
+}
+
+
+
+@keyframes flashwayspire {
+  0%, 40% {
+      color:yellow;
+  }
+  40%, 70% {
+      color:skyblue;
+  }
+  70%, 100% {
+      color: lightgreen;
+  }
+}
+
+
+@keyframes flash1 {
+  0%, 40% {
+      color:skyblue;
+     
+  }
+  40.9%, 70% {
+      color:lightgreen;
+  }
+  70%, 100% {
+      color: yellow;
+  }
+}
+
+@keyframes flash2 {
+  0%, 40% {
+      color:lightgreen;
+  }
+  40%, 70% {
+      color:yellow;
+  }
+  70%, 100% {
+      color: skyblue;
+  }
+}
+
+@keyframes flash3 {
+  0%, 40% {
+      color:yellow;
+  }
+  40%, 70% {
+      color:skyblue;
+  }
+  70%, 100% {
+      color: lightgreen;
+  }
+}
+
+
+
+#t1{
+  animation: flashwayspire 10s infinite;
+  
+}
+
+#sp1{
+  animation: flash1 3s infinite;
+  
+}
+
+
+#sp2{
+  animation: flash2 3s infinite;
+}
+#sp3{
+  animation: flash3 3.5s infinite; 
+}
+
+.center .btns {
+  margin-top: 20px;
+}
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid skyblue;
+  
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button{
+  color: skyblue;
+  background: none;
+}
+.btns button:hover {
+  background: yellow;
+  color:white;
+}
+
+.section2{
+  height:100vh;
+  overflow-x: hidden;
+  margin-left: 40px;
+  margin-right:40px;
+  
+  
+}
+
+.about1{
+  margin-top:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h2{
+  color:skyblue;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+.about1img img{
+  width:400px;
+  height:300px;
+}
+
+
+.about1text p{
+  margin-left:20px;
+
+  white-space: pre-line;
+}
+
+
+
+.row {
+  display: flex;
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.section4{
+  height:100vh;
+  overflow-x: hidden;
+  margin-left: 40px;
+  margin-right:40px;
+
+  
+}
+
+/* Add the following styles to your existing CSS */
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.persons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center items vertically within each row */
+}
+
+.column {
+  flex: 0 0 25%; /* Adjust the width of each column as needed */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.column img {
+  width: 100%;
+  height:200px;
+  border-radius: 20%;
+}
+
+.column p {
+  margin-top: 10px;
+}
+
+.about1img img{
+  border-radius: 25px;
+}
+
+
+.about1text p{
+  font-size:larger;
+}
+
+#about1textp{
+  font-weight: bolder;
+}
+
+
+/* Add this CSS for image glow effect */
+.column img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.column:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px skyblue;
+}
+
+
+
+/* Style for the form container */
+.section6 {
+  text-align: center;
+  padding: 20px;
+  margin:0px  140px;
+
+}
+
+/* Style for the Admission Form heading */
+
+
+/* Style for the form container */
+.admission_form {
+  margin-top: 40px;
+}
+
+/* Style for the form input and label */
+.adm_int {
+  margin-bottom: 15px;
+  margin-top:20px;
+}
+
+.label_text {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input_deg,
+.input_txt {
+  width: 20%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+  background-color: skyblue;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Hover effect for the submit button */
+.btn-primary:hover {
+  background-color: lightgreen;
+}
+
+form{
+  margin-top:20px;
+}
+
+
+footer{
+  margin-top:50px;
+  background-color: black;
+  padding:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+footer i{
+  font-weight: bolder;
+  font-size: large;
+  margin-left:30px;
+  color:white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .menu ul.show {
+    display: flex;
+  }
+
+  .menu ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .menu .burger {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+
+  .center .title {
+    font-size: 40px;
+  }
+
+  .center .btns button {
+    font-size: 16px;
+  }
+
+  .section2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .about1img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .column {
+    flex: 0 0 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .column img {
+    height: 150px;
+  }
+
+  .section4, .section6 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+
