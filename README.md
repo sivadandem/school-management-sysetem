@@ -26,7 +26,7 @@ The School Management System is a comprehensive web-based application designed t
 
 ## Getting Started
 
-Move Project Files:
+-> Move Project Files:
 
 Move the cloned project files to the "htdocs" directory within your XAMPP installation.
 Start Services:
