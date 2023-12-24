@@ -26,12 +26,37 @@ The School Management System is a comprehensive web-based application designed t
 
 ## Getting Started
 
+Move Project Files:
+
+Move the cloned project files to the "htdocs" directory within your XAMPP installation.
+Start Services:
+
+Start both the Apache and MySQL services using the XAMPP control panel.
+Access the Application:
+
+Open a web browser and navigate to http://localhost/school-management-system.
+Features
+College Home Page:
+
+Welcoming users and providing clear navigation options for students and administrators.
+User Interfaces:
+
+Separate interfaces tailored for students and administrators.
+Admin Login Page:
+
+Ensures secure access to the admin dashboard.
+Usage
+Navigate to College Home Page:
+
+Visit the home page of the college application.
+Choose Interface:
+
+Select between the student or admin interface.
+Admin Login:
+
+If opting for the admin interface, log in securely using the provided credentials.
+
 ### Prerequisites
 
 - [XAMPP](https://www.apachefriends.org/index.html) installed on your machine.
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/school-management-system.git
